@@ -32,7 +32,14 @@ namespace COMP123_M2020_FinalExam
         private void GenerateNames()
         {
             Random random = new Random();
-            
+            int p;
+            int q;
+            q = FirstNameListBox.Items.Count;
+            p = random.Next(q);
+            FirstNameTextBox.Text = FirstNameListBox.Items[p].ToString();
+            q = LastNameListBox.Items.Count;
+            p = random.Next(q);
+            LastNameTextBox.Text = LastNameListBox.Items[p].ToString();
         }
 
 
@@ -47,9 +54,9 @@ namespace COMP123_M2020_FinalExam
             //CALL METHOD GENERATE NAMES
             GenerateNames();
             //SET FIRSTNAME FROM TEXTBOX IN GENERATENAMEFORMS TO THE CHARACTER CLASS FIRSTNAME
-            FirstNameTextBox.Text = Program.character.FirstName;
+            Program.character.FirstName = FirstNameTextBox.Text;
             //SET LASTNAME FROM TEXTBOX IN GENERATENAMEFORMS TO THE CHARACTER CLASS LASTNAME
-            LastNameTextBox.Text = Program.character.LastName;
+            Program.character.LastName = LastNameTextBox.Text;
 
         }
 
