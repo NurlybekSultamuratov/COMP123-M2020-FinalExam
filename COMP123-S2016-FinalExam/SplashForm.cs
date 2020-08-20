@@ -29,5 +29,16 @@ namespace COMP123_M2020_FinalExam
            
            
         }
+
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            //SHOW THE FROM AFTER THE TIMER IS OFF
+            Program.generateNameForm.Show();
+            //HIDE THIS FORM
+            this.Hide();
+            //DISABLE TRIGERRING NEW FORMS
+            SplashFormTimer.Enabled = false;
+
+        }
     }
 }
