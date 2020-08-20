@@ -27,15 +27,30 @@ namespace COMP123_M2020_FinalExam
         {
 
         }
+        //CREATE GENERATENAMES METHOD TO RANDOMLY PICK NAMES FROM LISTBOX AND 
+        //DISPLAY IT IN THE TEXTBOX
+        private void GenerateNames()
+        {
+            Random random = new Random();
+            
+        }
+
 
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
-
+            //CALL METHOD GENERATE NAMES
+            GenerateNames();
         }
 
         private void GenerateButton_Click(object sender, EventArgs e)
         {
-            
+            //CALL METHOD GENERATE NAMES
+            GenerateNames();
+            //SET FIRSTNAME FROM TEXTBOX IN GENERATENAMEFORMS TO THE CHARACTER CLASS FIRSTNAME
+            FirstNameTextBox.Text = Program.character.FirstName;
+            //SET LASTNAME FROM TEXTBOX IN GENERATENAMEFORMS TO THE CHARACTER CLASS LASTNAME
+            LastNameTextBox.Text = Program.character.LastName;
+
         }
 
         private void GenerateNameForm_FormClosing(object sender, FormClosingEventArgs e)

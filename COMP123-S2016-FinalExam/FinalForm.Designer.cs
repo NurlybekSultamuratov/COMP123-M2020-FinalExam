@@ -38,24 +38,24 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.AbilityGroupBox = new System.Windows.Forms.GroupBox();
-            this.CharismaTextBox = new System.Windows.Forms.TextBox();
+            this.CharismaFill = new System.Windows.Forms.TextBox();
             this.CharismaLabel = new System.Windows.Forms.Label();
-            this.WisdomTextBox = new System.Windows.Forms.TextBox();
+            this.WisdomFill = new System.Windows.Forms.TextBox();
             this.WisdomLabel = new System.Windows.Forms.Label();
-            this.IntelligenceTextBox = new System.Windows.Forms.TextBox();
+            this.IntelligenceFill = new System.Windows.Forms.TextBox();
             this.IntelligenceLabel = new System.Windows.Forms.Label();
-            this.ConstitutionTextBox = new System.Windows.Forms.TextBox();
+            this.ConstitutionFill = new System.Windows.Forms.TextBox();
             this.ConstitutionLabel = new System.Windows.Forms.Label();
-            this.DexterityTextBox = new System.Windows.Forms.TextBox();
+            this.DexterityFill = new System.Windows.Forms.TextBox();
             this.DexterityLabel = new System.Windows.Forms.Label();
-            this.StrengthTextBox = new System.Windows.Forms.TextBox();
+            this.StrengthFill = new System.Windows.Forms.TextBox();
             this.StrengthLabel = new System.Windows.Forms.Label();
             this.LastNameLabel2 = new System.Windows.Forms.Label();
-            this.LastNameTextBox = new System.Windows.Forms.TextBox();
+            this.LastNameFill = new System.Windows.Forms.TextBox();
             this.FirstNameLabel2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FirstNameFill = new System.Windows.Forms.TextBox();
             this.RaceLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RaceFill = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.AbilityGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(504, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -137,17 +138,17 @@
             // 
             // AbilityGroupBox
             // 
-            this.AbilityGroupBox.Controls.Add(this.CharismaTextBox);
+            this.AbilityGroupBox.Controls.Add(this.CharismaFill);
             this.AbilityGroupBox.Controls.Add(this.CharismaLabel);
-            this.AbilityGroupBox.Controls.Add(this.WisdomTextBox);
+            this.AbilityGroupBox.Controls.Add(this.WisdomFill);
             this.AbilityGroupBox.Controls.Add(this.WisdomLabel);
-            this.AbilityGroupBox.Controls.Add(this.IntelligenceTextBox);
+            this.AbilityGroupBox.Controls.Add(this.IntelligenceFill);
             this.AbilityGroupBox.Controls.Add(this.IntelligenceLabel);
-            this.AbilityGroupBox.Controls.Add(this.ConstitutionTextBox);
+            this.AbilityGroupBox.Controls.Add(this.ConstitutionFill);
             this.AbilityGroupBox.Controls.Add(this.ConstitutionLabel);
-            this.AbilityGroupBox.Controls.Add(this.DexterityTextBox);
+            this.AbilityGroupBox.Controls.Add(this.DexterityFill);
             this.AbilityGroupBox.Controls.Add(this.DexterityLabel);
-            this.AbilityGroupBox.Controls.Add(this.StrengthTextBox);
+            this.AbilityGroupBox.Controls.Add(this.StrengthFill);
             this.AbilityGroupBox.Controls.Add(this.StrengthLabel);
             this.AbilityGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AbilityGroupBox.Location = new System.Drawing.Point(12, 27);
@@ -157,15 +158,15 @@
             this.AbilityGroupBox.TabStop = false;
             this.AbilityGroupBox.Text = "Abilities";
             // 
-            // CharismaTextBox
+            // CharismaFill
             // 
-            this.CharismaTextBox.BackColor = System.Drawing.Color.White;
-            this.CharismaTextBox.Location = new System.Drawing.Point(7, 361);
-            this.CharismaTextBox.Name = "CharismaTextBox";
-            this.CharismaTextBox.ReadOnly = true;
-            this.CharismaTextBox.Size = new System.Drawing.Size(127, 26);
-            this.CharismaTextBox.TabIndex = 11;
-            this.CharismaTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CharismaFill.BackColor = System.Drawing.Color.White;
+            this.CharismaFill.Location = new System.Drawing.Point(7, 361);
+            this.CharismaFill.Name = "CharismaFill";
+            this.CharismaFill.ReadOnly = true;
+            this.CharismaFill.Size = new System.Drawing.Size(127, 26);
+            this.CharismaFill.TabIndex = 11;
+            this.CharismaFill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CharismaLabel
             // 
@@ -177,15 +178,15 @@
             this.CharismaLabel.TabIndex = 10;
             this.CharismaLabel.Text = "Charisma";
             // 
-            // WisdomTextBox
+            // WisdomFill
             // 
-            this.WisdomTextBox.BackColor = System.Drawing.Color.White;
-            this.WisdomTextBox.Location = new System.Drawing.Point(7, 301);
-            this.WisdomTextBox.Name = "WisdomTextBox";
-            this.WisdomTextBox.ReadOnly = true;
-            this.WisdomTextBox.Size = new System.Drawing.Size(127, 26);
-            this.WisdomTextBox.TabIndex = 9;
-            this.WisdomTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.WisdomFill.BackColor = System.Drawing.Color.White;
+            this.WisdomFill.Location = new System.Drawing.Point(7, 301);
+            this.WisdomFill.Name = "WisdomFill";
+            this.WisdomFill.ReadOnly = true;
+            this.WisdomFill.Size = new System.Drawing.Size(127, 26);
+            this.WisdomFill.TabIndex = 9;
+            this.WisdomFill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // WisdomLabel
             // 
@@ -197,15 +198,15 @@
             this.WisdomLabel.TabIndex = 8;
             this.WisdomLabel.Text = "Wisdom";
             // 
-            // IntelligenceTextBox
+            // IntelligenceFill
             // 
-            this.IntelligenceTextBox.BackColor = System.Drawing.Color.White;
-            this.IntelligenceTextBox.Location = new System.Drawing.Point(7, 241);
-            this.IntelligenceTextBox.Name = "IntelligenceTextBox";
-            this.IntelligenceTextBox.ReadOnly = true;
-            this.IntelligenceTextBox.Size = new System.Drawing.Size(127, 26);
-            this.IntelligenceTextBox.TabIndex = 7;
-            this.IntelligenceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.IntelligenceFill.BackColor = System.Drawing.Color.White;
+            this.IntelligenceFill.Location = new System.Drawing.Point(7, 241);
+            this.IntelligenceFill.Name = "IntelligenceFill";
+            this.IntelligenceFill.ReadOnly = true;
+            this.IntelligenceFill.Size = new System.Drawing.Size(127, 26);
+            this.IntelligenceFill.TabIndex = 7;
+            this.IntelligenceFill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // IntelligenceLabel
             // 
@@ -217,15 +218,15 @@
             this.IntelligenceLabel.TabIndex = 6;
             this.IntelligenceLabel.Text = "Intelligence";
             // 
-            // ConstitutionTextBox
+            // ConstitutionFill
             // 
-            this.ConstitutionTextBox.BackColor = System.Drawing.Color.White;
-            this.ConstitutionTextBox.Location = new System.Drawing.Point(7, 181);
-            this.ConstitutionTextBox.Name = "ConstitutionTextBox";
-            this.ConstitutionTextBox.ReadOnly = true;
-            this.ConstitutionTextBox.Size = new System.Drawing.Size(127, 26);
-            this.ConstitutionTextBox.TabIndex = 5;
-            this.ConstitutionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ConstitutionFill.BackColor = System.Drawing.Color.White;
+            this.ConstitutionFill.Location = new System.Drawing.Point(7, 181);
+            this.ConstitutionFill.Name = "ConstitutionFill";
+            this.ConstitutionFill.ReadOnly = true;
+            this.ConstitutionFill.Size = new System.Drawing.Size(127, 26);
+            this.ConstitutionFill.TabIndex = 5;
+            this.ConstitutionFill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ConstitutionLabel
             // 
@@ -237,15 +238,15 @@
             this.ConstitutionLabel.TabIndex = 4;
             this.ConstitutionLabel.Text = "Constitution";
             // 
-            // DexterityTextBox
+            // DexterityFill
             // 
-            this.DexterityTextBox.BackColor = System.Drawing.Color.White;
-            this.DexterityTextBox.Location = new System.Drawing.Point(7, 121);
-            this.DexterityTextBox.Name = "DexterityTextBox";
-            this.DexterityTextBox.ReadOnly = true;
-            this.DexterityTextBox.Size = new System.Drawing.Size(127, 26);
-            this.DexterityTextBox.TabIndex = 3;
-            this.DexterityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DexterityFill.BackColor = System.Drawing.Color.White;
+            this.DexterityFill.Location = new System.Drawing.Point(7, 121);
+            this.DexterityFill.Name = "DexterityFill";
+            this.DexterityFill.ReadOnly = true;
+            this.DexterityFill.Size = new System.Drawing.Size(127, 26);
+            this.DexterityFill.TabIndex = 3;
+            this.DexterityFill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DexterityLabel
             // 
@@ -257,15 +258,15 @@
             this.DexterityLabel.TabIndex = 2;
             this.DexterityLabel.Text = "Dexterity";
             // 
-            // StrengthTextBox
+            // StrengthFill
             // 
-            this.StrengthTextBox.BackColor = System.Drawing.Color.White;
-            this.StrengthTextBox.Location = new System.Drawing.Point(7, 61);
-            this.StrengthTextBox.Name = "StrengthTextBox";
-            this.StrengthTextBox.ReadOnly = true;
-            this.StrengthTextBox.Size = new System.Drawing.Size(127, 26);
-            this.StrengthTextBox.TabIndex = 1;
-            this.StrengthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StrengthFill.BackColor = System.Drawing.Color.White;
+            this.StrengthFill.Location = new System.Drawing.Point(7, 61);
+            this.StrengthFill.Name = "StrengthFill";
+            this.StrengthFill.ReadOnly = true;
+            this.StrengthFill.Size = new System.Drawing.Size(127, 26);
+            this.StrengthFill.TabIndex = 1;
+            this.StrengthFill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StrengthLabel
             // 
@@ -287,13 +288,13 @@
             this.LastNameLabel2.TabIndex = 11;
             this.LastNameLabel2.Text = "Last Name";
             // 
-            // LastNameTextBox
+            // LastNameFill
             // 
-            this.LastNameTextBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameTextBox.Location = new System.Drawing.Point(340, 54);
-            this.LastNameTextBox.Name = "LastNameTextBox";
-            this.LastNameTextBox.Size = new System.Drawing.Size(152, 26);
-            this.LastNameTextBox.TabIndex = 10;
+            this.LastNameFill.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameFill.Location = new System.Drawing.Point(340, 54);
+            this.LastNameFill.Name = "LastNameFill";
+            this.LastNameFill.Size = new System.Drawing.Size(152, 26);
+            this.LastNameFill.TabIndex = 10;
             // 
             // FirstNameLabel2
             // 
@@ -305,13 +306,13 @@
             this.FirstNameLabel2.TabIndex = 9;
             this.FirstNameLabel2.Text = "First Name";
             // 
-            // textBox1
+            // FirstNameFill
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(168, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 26);
-            this.textBox1.TabIndex = 8;
+            this.FirstNameFill.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameFill.Location = new System.Drawing.Point(168, 54);
+            this.FirstNameFill.Name = "FirstNameFill";
+            this.FirstNameFill.Size = new System.Drawing.Size(152, 26);
+            this.FirstNameFill.TabIndex = 8;
             // 
             // RaceLabel
             // 
@@ -323,13 +324,13 @@
             this.RaceLabel.TabIndex = 13;
             this.RaceLabel.Text = "Race";
             // 
-            // textBox2
+            // RaceFill
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(168, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 26);
-            this.textBox2.TabIndex = 12;
+            this.RaceFill.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RaceFill.Location = new System.Drawing.Point(168, 148);
+            this.RaceFill.Name = "RaceFill";
+            this.RaceFill.Size = new System.Drawing.Size(152, 26);
+            this.RaceFill.TabIndex = 12;
             // 
             // FinalForm
             // 
@@ -339,11 +340,11 @@
             this.ClientSize = new System.Drawing.Size(504, 481);
             this.ControlBox = false;
             this.Controls.Add(this.RaceLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RaceFill);
             this.Controls.Add(this.LastNameLabel2);
-            this.Controls.Add(this.LastNameTextBox);
+            this.Controls.Add(this.LastNameFill);
             this.Controls.Add(this.FirstNameLabel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FirstNameFill);
             this.Controls.Add(this.AbilityGroupBox);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
@@ -353,6 +354,7 @@
             this.Name = "FinalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Form";
+            this.Load += new System.EventHandler(this.FinalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.AbilityGroupBox.ResumeLayout(false);
@@ -374,23 +376,23 @@
         protected System.Windows.Forms.Button BackButton;
         protected System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.GroupBox AbilityGroupBox;
-        private System.Windows.Forms.TextBox CharismaTextBox;
+        private System.Windows.Forms.TextBox CharismaFill;
         private System.Windows.Forms.Label CharismaLabel;
-        private System.Windows.Forms.TextBox WisdomTextBox;
+        private System.Windows.Forms.TextBox WisdomFill;
         private System.Windows.Forms.Label WisdomLabel;
-        private System.Windows.Forms.TextBox IntelligenceTextBox;
+        private System.Windows.Forms.TextBox IntelligenceFill;
         private System.Windows.Forms.Label IntelligenceLabel;
-        private System.Windows.Forms.TextBox ConstitutionTextBox;
+        private System.Windows.Forms.TextBox ConstitutionFill;
         private System.Windows.Forms.Label ConstitutionLabel;
-        private System.Windows.Forms.TextBox DexterityTextBox;
+        private System.Windows.Forms.TextBox DexterityFill;
         private System.Windows.Forms.Label DexterityLabel;
-        private System.Windows.Forms.TextBox StrengthTextBox;
+        private System.Windows.Forms.TextBox StrengthFill;
         private System.Windows.Forms.Label StrengthLabel;
         private System.Windows.Forms.Label LastNameLabel2;
-        private System.Windows.Forms.TextBox LastNameTextBox;
+        private System.Windows.Forms.TextBox LastNameFill;
         private System.Windows.Forms.Label FirstNameLabel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FirstNameFill;
         private System.Windows.Forms.Label RaceLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RaceFill;
     }
 }

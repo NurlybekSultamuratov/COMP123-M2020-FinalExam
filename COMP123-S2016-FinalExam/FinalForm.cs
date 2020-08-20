@@ -38,5 +38,24 @@ namespace COMP123_M2020_FinalExam
         {
             Application.Exit();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            //FILL THE BLANK TEXTBOXES IN FINAL FORM
+            LastNameFill.Text = Program.character.LastName;
+            FirstNameFill.Text = Program.character.FirstName;
+            RaceFill.Text= Program.character.Race;
+            StrengthFill.Text = Program.character.Strength;
+            DexterityFill.Text = Program.character.Dexterity;
+            ConstitutionFill.Text = Program.character.Constitution;
+            IntelligenceFill.Text = Program.character.Intelligence;
+            WisdomFill.Text = Program.character.Wisdom;
+            CharismaFill.Text = Program.character.Charisma;
+        }
     }
 }
