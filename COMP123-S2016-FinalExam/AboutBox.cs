@@ -106,5 +106,10 @@ namespace COMP123_M2020_FinalExam
         {
 
         }
+
+        private void AboutBox_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

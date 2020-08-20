@@ -19,7 +19,8 @@ namespace COMP123_M2020_FinalExam
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-
+            Program.abilityGeneratorForm.Show();
+            this.Hide();
         }
 
         private void FirstNameListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -35,6 +36,11 @@ namespace COMP123_M2020_FinalExam
         private void GenerateButton_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void GenerateNameForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

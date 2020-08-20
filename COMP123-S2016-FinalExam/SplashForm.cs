@@ -26,10 +26,8 @@ namespace COMP123_M2020_FinalExam
 
         private void SplashForm_Load(object sender, EventArgs e)
         {
-            GenerateNameForm mainform = new GenerateNameForm();
            
-            mainform.Show();
-            Hide();
+           
         }
     }
 }

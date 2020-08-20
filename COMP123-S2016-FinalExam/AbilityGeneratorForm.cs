@@ -187,5 +187,10 @@ namespace COMP123_M2020_FinalExam
         {
 
         }
+
+        private void AbilityGeneratorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
