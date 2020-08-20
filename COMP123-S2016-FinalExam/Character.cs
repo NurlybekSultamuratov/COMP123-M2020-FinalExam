@@ -2,12 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+/// <summary>
+/// FILE NAME : Character.cs
+/// AUTHOR'S NAME : NURLYBEK SULTAMURATOV
+/// STUDENT NUMBER : 301103746
+/// CHANGES MADE : CREATED PUBLIC PROPERTIES FOR FIRSTNAME AND LASTNAME
+/// </summary>
 namespace COMP123_M2020_FinalExam
 {
     public class Character
     {
         //PUBLIC PROPERTIES//
+        /// <summary>
+        /// GETS VALUES FROM GENERATION 
+        /// </summary>
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

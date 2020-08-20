@@ -7,16 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// FILE NAME : GenerateNameForm.cs
+/// AUTHOR'S NAME : NURLYBEK SULTAMURATOV
+/// STUDENT NUMBER : 301103746
+/// CHANGES MADE : 
+/// 1. CREATED GENERATENAMES METHOD
+/// 2. CALLED GENERATENAMES METHOD IN LOAD AND BUTTON
+/// </summary>
 namespace COMP123_M2020_FinalExam
 {
     public partial class GenerateNameForm : Form
     {
+        //INITIALIZE FORM
         public GenerateNameForm()
         {
             InitializeComponent();
         }
-
+        //PRIVATE METHODS
         private void NextButton_Click(object sender, EventArgs e)
         {
             Program.abilityGeneratorForm.Show();
@@ -27,6 +35,7 @@ namespace COMP123_M2020_FinalExam
         {
 
         }
+
         //CREATE GENERATENAMES METHOD TO RANDOMLY PICK NAMES FROM LISTBOX AND 
         //DISPLAY IT IN THE TEXTBOX
         private void GenerateNames()
@@ -62,7 +71,7 @@ namespace COMP123_M2020_FinalExam
 
         private void GenerateNameForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+
         }
     }
 }

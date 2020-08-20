@@ -9,7 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
-
+/// <summary>
+/// FILE NAME : AbilityGeneratorForm.cs
+/// AUTHOR'S NAME : NURLYBEK SULTAMURATOV
+/// STUDENT NUMBER : 301103746
+/// CHANGES MADE : ADDED EXIT POINT
+/// </summary>
 namespace COMP123_M2020_FinalExam
 {
     public partial class AbilityGeneratorForm : Form
@@ -82,9 +87,6 @@ namespace COMP123_M2020_FinalExam
             FirstAbilityComboBox.SelectedIndex = 0;
             SecondAbilityComboBox.SelectedIndex = 0;
             ModifyComboBox.SelectedIndex = 0;
-
-
-
         }
 
         private void SwapButton_Click(object sender, EventArgs e)
@@ -190,6 +192,7 @@ namespace COMP123_M2020_FinalExam
 
         private void AbilityGeneratorForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //ADDED EXIT POINT 
             Application.Exit();
         }
     }

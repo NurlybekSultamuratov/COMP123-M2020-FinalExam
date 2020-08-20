@@ -8,6 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/// <summary>
+/// FILE NAME : RaceAndClassForm.cs
+/// AUTHOR'S NAME : NURLYBEK SULTAMURATOV
+/// STUDENT NUMBER : 301103746
+/// CHANGES MADE : NO CHANGES
+/// </summary>
 
 namespace COMP123_M2020_FinalExam
 {
@@ -54,6 +60,11 @@ namespace COMP123_M2020_FinalExam
         private void RaceAndClassForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void RaceAndClassForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

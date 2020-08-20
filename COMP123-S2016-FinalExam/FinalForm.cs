@@ -7,13 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// FILE NAME : FinalForm.cs
+/// AUTHOR'S NAME : NURLYBEK SULTAMURATOV
+/// STUDENT NUMBER : 301103746
+/// CHANGES MADE : ASSIGNED VALUES FROM CHARACTER CLASS TO THE TEXTBOXES
+/// </summary>
 namespace COMP123_M2020_FinalExam
 {
     public partial class FinalForm : Form
     {
+        //PUBLIC FIELD
         public RaceAndClassForm previousForm { get; set; }
 
+        //INITIALIZE
         public FinalForm()
         {
             InitializeComponent();
@@ -36,7 +43,7 @@ namespace COMP123_M2020_FinalExam
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -49,7 +56,7 @@ namespace COMP123_M2020_FinalExam
             //FILL THE BLANK TEXTBOXES IN FINAL FORM
             LastNameFill.Text = Program.character.LastName;
             FirstNameFill.Text = Program.character.FirstName;
-            RaceFill.Text= Program.character.Race;
+            RaceFill.Text = Program.character.Race;
             StrengthFill.Text = Program.character.Strength;
             DexterityFill.Text = Program.character.Dexterity;
             ConstitutionFill.Text = Program.character.Constitution;

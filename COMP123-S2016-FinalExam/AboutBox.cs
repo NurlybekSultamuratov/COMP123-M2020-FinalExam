@@ -6,7 +6,12 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// FILE NAME : AboutBox.cs
+/// AUTHOR'S NAME : NURLYBEK SULTAMURATOV
+/// STUDENT NUMBER : 301103746
+/// CHANGES MADE : NO CHANGES
+/// </summary>
 namespace COMP123_M2020_FinalExam
 {
     partial class AboutBox : Form
@@ -108,6 +113,11 @@ namespace COMP123_M2020_FinalExam
         }
 
         private void AboutBox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelVersion_Click(object sender, EventArgs e)
         {
 
         }
